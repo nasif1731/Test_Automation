@@ -57,6 +57,6 @@ Scenario('Privacy',({I})=> {
   I.click('Privacy');
 
   // Wait for the privacy policy form to appear
-  I.waitForText('GitHub Privacy Policy', 5);
+  I.waitForText('GitHub General Privacy Statement', 5);
 
 });
