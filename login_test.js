@@ -51,3 +51,12 @@ Scenario('Forgot Password', ({ I }) => {
   // Wait for the reset password form to appear
   I.waitForText('Verify your account', 5);
 });
+
+Scenario('Privacy',({I})=> {
+  I.amOnPage('https://github.com/login');
+  I.click('Privacy');
+
+  // Wait for the privacy policy form to appear
+  I.waitForText('GitHub Privacy Policy', 5);
+
+});
